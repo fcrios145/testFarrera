@@ -52,13 +52,40 @@
                 </div>
             </div>
             <div class="main-slider-wrapper">
+                <div class="slider-controls">
+                    <span onclick="SLIDER.slide(this, 1)"><a href="#">1</a></span>
+                    <span><a onclick="SLIDER.slide(this, 2)" href="#">2</a></span>
+                    <span><a onclick="SLIDER.slide(this, 3)" href="#">3</a></span>
+                    <span><a onclick="SLIDER.slide(this, 4)" href="#">4</a></span>
+                </div>
                 <ul class="main-slider">
-                    <li><img src="http://loremflickr.com/1004/200?random=1" alt="1"></li>
-                    <li><img src="http://loremflickr.com/1004/200?random=2" alt="1"></li>
-                    <li><img src="http://loremflickr.com/1004/200?random=3" alt="1"></li>
-                    <li><img src="http://loremflickr.com/1004/200?random=4" alt="1"></li>
+                    <li><img src="http://loremflickr.com/1004/300?random=1" alt="1">1</li>
+                    <li><img src="http://loremflickr.com/1004/300?random=2" alt="2">2</li>
+                    <li><img src="http://loremflickr.com/1004/300?random=3" alt="3">3</li>
+                    <li><img src="http://loremflickr.com/1004/300?random=4" alt="4">4</li>
                 </ul>
+
+            </div>
+            <div class="content">
+                <h2>Welcome to Plug</h2>
+                <p>Plug will be available for both companies moving forward, please take into consideration the following:</p>
+                <section>
+                    <h3>HPI users:</h3>
+                    <ul>
+                        <li>Right now Plug is only supported on On-Premises sites. Support for Office 365 will be notified when ready.</li>
+                        <li>Tool versions: Only 2.5 and 3.0 tools versions will work on On-Premises sites.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>HPE users.</h3>
+                    <ul>
+                        <li>We'll provide an HPE version of the tool in the following months.</li>
+                    </ul>
+                </section>
             </div>
         </div>
+
+        <script type="text/javascript" src="styles/components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
