@@ -1,7 +1,3 @@
-$(document).ready( function() {
-
-});
-
 var SLIDER = (function() {
 
     var _slide = function(evnt, index) {
@@ -13,6 +9,14 @@ var SLIDER = (function() {
     return {
         slide: function(event, index) {
             _slide(event, index);
+        }
+    }
+})();
+
+var MAIN = (function() {
+    return {
+        modal: function() {
+            $('#myModal').modal('show');
         }
     }
 })();

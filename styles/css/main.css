@@ -28,6 +28,7 @@ header
 ul {
     display: inline;
     padding-left: 0px;
+    position: relative;
 }
 
 header
@@ -41,16 +42,36 @@ li {
 }
 
 .input-icon
+input {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px;
+
+    border-bottom-color: #b3b3b3;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #b3b3b3;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #b3b3b3;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #b3b3b3;
+    border-top-style: solid;
+    border-top-width: 1px;`
+}
+
+.input-icon
 i {
     position: absolute;
     right: 0;
-    padding: 5px;
+    padding: 5px 5px 3px 5px;
     border-left-width: 1px !important;
     border-left-style: solid;
     border-right-width: 1px !important;
     border-right-style: solid;
     border-color: #B9B8BB;
     background-color: #E6EBEE;
+    border-radius: 0px 5px 5px 0px;
 }
 
 .hp-logo {
@@ -253,6 +274,7 @@ span
     padding: 4px 10px;
     margin-right: 3px;
     border-radius: 0px 5px 0px 5px;
+    cursor: pointer;
 }
 
 .slider-controls 
@@ -285,4 +307,223 @@ li:nth-child(4) {
     display: none;
 }
 
+.content,
+.second-content {
+    background-color: #FFF;
+    margin-top: 10px;
+    padding: 15px 15px 50px 15px;
+}
+
+.content
+h2,
+.second-content 
+h2 {
+    margin-top: 0;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid;
+    border-color: #000;
+}
+
+.content
+p {
+    font-size: 16px;
+}
+
+.content
+h3 {
+    color: #000;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 2px;
+}
+
+.content
+section
+ul {
+    padding-left: 0;
+}
+
+.content
+section
+ul
+li {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.content
+section
+ul
+li:before {
+    content: "-";
+}
+
+.last-content {
+    position: relative;
+}
+
+.third-content {
+    background-color: #FFF;
+    margin-top: 10px;
+    padding: 5px 15px 15px 15px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.fourth-content {
+    background-color: #FFF;
+    margin-top: 10px;
+    padding: 5px 15px 84px 15px;
+    display: inline-block;
+    position: absolute;
+    width: 324px;
+}
+
+.fourth-content
+h3 {
+    color: #000;
+    font-weight: bold; 
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.fourth-content
+button {
+    background-color: #F05332;
+    border: none;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 30px;
+    border-radius: 0px 4px 0px 4px;
+    margin-left: 8px;
+    margin-top: 30px;
+}
+
+.footer {
+    background-color: #FFF;
+    margin-top: 10px;
+    position: relative;
+    height: 90px;
+}
+
+.footer
+ul:nth-child(1) {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.footer
+ul:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.footer
+ul:nth-child(1)
+li,
+.footer
+ul:nth-child(2)
+li
+{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 10px;
+
+    border-right-width: 1px !important;
+    border-right-style: solid;
+    border-color: #B9B8BB;
+    font-size: 13px;
+}
+
+.footer
+ul:nth-child(1)
+li:last-child,
+.footer
+ul:nth-child(2)
+li:last-child {
+    border-right: none;
+}
+
+.footer
+p {
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+    font-size: 13px;
+}
+
+.footer
+p
+span {
+    color: #15A4E0;
+}
+
+::-webkit-input-placeholder {
+   padding-left: 5px;
+   font-size: 12px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   padding-left: 5px;
+   font-size: 12px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   padding-left: 5px;
+   font-size: 12px;
+}
+
+:-ms-input-placeholder {  
+   padding-left: 5px;
+   font-size: 12px;
+}
+
+/*submenu*/
+header
+ul
+ul {
+    display:none;
+	position:absolute;
+	top:100%;
+	/*left:0;*/
+    z-index: 100;
+	background:#fff;
+	padding:0
+    cursor: pointer;
+}
+
+header
+ul
+ul
+li {
+    float:none;
+    cursor: pointer;
+    margin: 0;
+    padding: 11px;
+}
+
+header
+ul
+ul
+li:hover {
+    background-color: #E6EBEE;
+}
+
+header
+ul
+li:hover > ul
+{
+	display:block
+}
 

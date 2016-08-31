@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Farrera Test</title>
-    <link rel="stylesheet" href="styles/components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="styles/css/main.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Farrera Test</title>
+        <link rel="stylesheet" href="styles/components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/css/main.css">
+    </head>
+    <body>
         <div class="main">
             <header>
                 <ul>
@@ -15,7 +15,12 @@
                     <li>Human Resources & Benefits</li>
                     <li>Organizations & Locations</li>
                     <li>Index</li>
-                    <li>Employee links ▼</li>
+                    <li>Employee links ▼
+                        <ul>
+                            <li>Submenu 1</li>
+                            <li>Submenu 2</li>
+                        </ul>
+                    </li>
                 </ul>
                 <div class="input-icon">
                     <input type="text" placeholder="People finder"/>
@@ -35,8 +40,8 @@
                 </ul>
                 <div class="search-plug">
                     <input type="text" placeholder="Search in Plug" />
-                        <i class="menu-search-icon glyphicon glyphicon-search"></i>
-                        <i class="glyphicon dropdown-menu-icon">▼</i>
+                    <i class="menu-search-icon glyphicon glyphicon-search"></i>
+                    <i class="glyphicon dropdown-menu-icon">▼</i>
                 </div>
                 <h1>Plug</h1>
                 <img class="hp-logo" src="styles/img/hp-logo.png" alt="">
@@ -54,9 +59,9 @@
             <div class="main-slider-wrapper">
                 <div class="slider-controls">
                     <span onclick="SLIDER.slide(this, 1)"><a href="#">1</a></span>
-                    <span><a onclick="SLIDER.slide(this, 2)" href="#">2</a></span>
-                    <span><a onclick="SLIDER.slide(this, 3)" href="#">3</a></span>
-                    <span><a onclick="SLIDER.slide(this, 4)" href="#">4</a></span>
+                    <span onclick="SLIDER.slide(this, 2)" ><a href="#">2</a></span>
+                    <span onclick="SLIDER.slide(this, 3)" ><a href="#">3</a></span>
+                    <span onclick="SLIDER.slide(this, 4)" ><a href="#">4</a></span>
                 </div>
                 <ul class="main-slider">
                     <li><img src="http://loremflickr.com/1004/300?random=1" alt="1">1</li>
@@ -83,9 +88,56 @@
                     </ul>
                 </section>
             </div>
+            <div class="second-content">
+                <h2>Websites using Plug</h2>
+            </div>
+
+            <div class="last-content">
+                <div class="third-content">
+                    <img src="styles/img/mapa.jpg" alt="">
+                </div>
+
+                <div class="fourth-content">
+                    <h3>Step by step</h3>
+                    <p>From installing and configuring to creating and customizing your page. we have videos for every  Plug module. <br>
+                    <br>
+
+                    Select one and start creating your sites now!
+                    </p>
+                    <button onclick="MAIN.modal()">Tutorials</button>
+                </div>
+            </div>
+            <div class="footer">
+                <ul>
+                    <li>Privacy statement</li>
+                    <li>Terms of use</li>
+                    <li>hp.com</li>
+                </ul>
+                <ul>
+                    <li>© 2015 Hewlett-Packard Development Company, LP</li>
+                    <li>HP Restricted</li>
+                </ul>
+                <p>Developed by: <span>GBS Marketing GDL</span></p>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>Click en el boton</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
         <script type="text/javascript" src="styles/components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="styles/components/bootstrap/js/modal.js"></script>
         <script type="text/javascript" src="main.js"></script>
-</body>
+    </body>
 </html>
